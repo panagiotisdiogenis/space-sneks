@@ -6,13 +6,13 @@
     "SYMBOL": "ETH",
     "ID": 4
   },
-  "NFT_NAME": "Space Sneks NFT",
+  "NFT_NAME": "Space Sneks",
   "SYMBOL": "SSNFT",
   "MAX_SUPPLY": 10,
   "WEI_COST": 10000000000000000,
   "DISPLAY_COST": 0.01,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/space-sneks-v2",
-  "SHOW_BACKGROUND": true
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/space-sneks-v2",
+  "SHOW_BACKGROUND": false
 }
