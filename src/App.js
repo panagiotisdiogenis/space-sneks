@@ -11,7 +11,7 @@ const truncate = (input, len) =>
 export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
-  border: none;
+  border: solid 1px #000;
   background-color: var(--secondary);
   padding: 10px;
   font-weight: bold;
@@ -31,7 +31,7 @@ export const StyledButton = styled.button`
 export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
-  border: none;
+  border: solid 1px #000;
   background-color: var(--primary);
   padding: 10px;
   font-weight: bold;
@@ -198,28 +198,34 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
+        style={{ padding: 24, backgroundColor: "#fff" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         <a href={CONFIG.MARKETPLACE_LINK}>
-          <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+          <StyledLogo 
+            alt={"logo"} 
+            src={"/config/images/logo-new.png"} 
+            style={{
+              width: "100px",
+              height: "100px",
+              borderRadius: "50%",
+              border: "solid 1px #ccc",
+            }}
+          />
         </a>
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-          </s.Container>
+
           <s.SpacerLarge />
           <s.Container
             flex={2}
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              backgroundColor: "#fff",
               padding: 24,
               borderRadius: 24,
-              border: "4px dashed var(--secondary)",
-              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+              border: "1px solid #ccc",
             }}
           >
             <s.TextTitle
@@ -227,7 +233,7 @@ function App() {
                 textAlign: "center",
                 fontSize: 50,
                 fontWeight: "bold",
-                color: "var(--accent-text)",
+                color: "#000",
               }}
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
@@ -235,7 +241,7 @@ function App() {
             <s.TextDescription
               style={{
                 textAlign: "center",
-                color: "var(--primary-text)",
+                color: "#000",
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
@@ -398,13 +404,7 @@ function App() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
-            />
-          </s.Container>
+
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
