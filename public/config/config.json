@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x16Fb6198e7c2788BCa8952b54399EBbAd014b326",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x16fb6198e7c2788bca8952b54399ebbad014b326",
+  "NETWORK": {
+    "NAME": "Rinkeby",
+    "SYMBOL": "ETH",
+    "ID": 137
+  },
+  "NFT_NAME": "Space Sneks NFT",
+  "SYMBOL": "SSNFT",
+  "MAX_SUPPLY": 10,
+  "WEI_COST": 4000000000000000000,
+  "DISPLAY_COST": 0.01,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/space-sneks-v2",
+  "SHOW_BACKGROUND": true
+}
